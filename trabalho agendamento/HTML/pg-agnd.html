@@ -1,105 +1,188 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>página de agendamento</title>
-    <link rel="stylesheet" type="text/css" href="agendamento.css">
-
-</head>
-
-
-<body>
-
-
+    <title>Página de Agendamento</title>
     <style>
-         
-         body{
-             background-color: rgb(32, 32, 32);
+      hr {
+            border: 1px solid #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(32, 32, 32);
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 251, 0);
         }
 
-       
-        img{
-    width: 1400px;
-    height: 350px;
-    opacity: 45%;
-    border: 5px solid black;
-}
+        img {
+            width: 1400px;
+            height: 350px;
+            opacity: 45%;
+            border: 5px solid black;
+        }
 
-       h1{
-        color: rgb(255, 251, 0);
-        font-family: Arial, Helvetica, sans-serif;
-       }
-      
-       h2{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-       }
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            color: rgb(255, 251, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-       label{
-        font-family: Arial, Helvetica, sans-serif;
-        color:rgb(255, 251, 0) ;
-       }
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
 
-       a{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-       }
+        p {
+            text-align: center;
+            color: #666;
+        }
 
-      h3{
-        color: white;
-      }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            background-color: #fff;
+            max-height: 500px;
+            overflow-y: auto;
+        }
 
-    p{
-      color: green;
-    }
-    
-   
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
 
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        a {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        #abc {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
-
-    <fieldset>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img id="banner" src="imagem de de uma barbearia com quadros do cristiano ronaldo.jpeg"> 
-
-
-    <h1> PÁGINA DE AGENDAMENTO</h1>
-    <h2>Entre por formulario ou envie em nosso WhatsApp</h2>
-    <br>
-    <br>
-    <br>
-    <label>Nome</label>
-    <Input type="Nome" id="Nome" name="Nome">
-    <br>
-    <br>
-
-    <label>Horario</label>
-    <Input type="Horario" id="Horario" name="Horario">
-    <br>
-    <br>
+</head>
+<body>
     
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a href="enviado.html"> Enviar
-    
+        <img id="banner" src="/trabalho-main/trabalho agendamento/IMAGEM/lol1.jpeg" alt="Banner">
+        <h1>PÁGINA DE AGENDAMENTO</h1>
+        <hr>
+        <h2>ENVIE O FORMULARIO</h2>
+        <fieldset>
+        <label for="pessoa">Nome Completo:</label>
+        <input type="text" id="pessoa" name="pessoa" required>
+
+        <label for="contato">Telefone de Contato:</label>
+        <input type="tel" id="contato" name="contato" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="data">Data do Corte:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="horario">Horário do Corte:</label>
+        <select name="horario" id="horario" required>
+            <option value="">Selecione o horário</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+        </select>
+
+        <label for="servico">Serviço:</label>
+        <input type="text" id="servico" name="servico" placeholder="Corte simples, Barba, etc.">
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma observação adicional?"></textarea>
+
+        <input type="submit" value="Agendar">
+        <br><br><br><br><br>
+        <a href="teste.html">VOLTAR PARA PÁGINA INICIAL</a>
+    </fieldset>
+<footer id="abc">
+  <a href="...">Voltar a Página Inicial</a>
+</footer>
     <br>
-    <br>
-    <br>
-    <br>
 
+    <script>
+        document.getElementById('contato').addEventListener('input', function (e) {
+            let value = this.value;
 
-    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+            // Remove tudo que não for número
+            value = value.replace(/\D/g, '');
 
-    
-  <a href="teste.html"> VOLTAR PARA PÁGINA INICIAL</a> </img> 
+            // Limita o número de caracteres
+            if (value.length > 11) {
+                value = value.slice(0, 11);
+            }
 
-   
-</fieldset>
+            // Adiciona os parênteses e o traço
+            if (value.length >= 2) {
+                value = '(' + value.substring(0, 2) + ') ' + value.substring(2);
+            }
+            if (value.length > 9) {
+                value = value.substring(0, 3) + value.substring(3, 9) + '-' + value.substring(9, 13);
+            }
 
+            this.value = value;
+        });
+    </script>
 </body>
 </html>
